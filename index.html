@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, My Siopao! 💙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="hearts" id="hearts"></div>
+
+  <main class="card">
+
+    <!-- PAGE 1: WELCOME -->
+    <section id="page1" class="screen">
+      <div class="sticker">🎂💙🎀</div>
+      <p class="small-title">A LITTLE SURPRISE FOR YOU</p>
+      <h1>Happy Birthday,<br><span>My Siopao!</span></h1>
+      <p class="subtitle">Today is all about you, beautiful.</p>
+
+      <button onclick="showPage('page2')">
+        Open Your Surprise 💌
+      </button>
+    </section>
+
+    <!-- PAGE 2: PHOTO GALLERY -->
+    <section id="page2" class="screen hidden">
+      <p class="small-title">MADE WITH LOVE 💗</p>
+      <h2>Our Special Memories</h2>
+
+      <div class="photo-frame">
+        <img id="photo" src="photos/photos1.jpg" alt="Our memory">
+    
+
+      </div>
+
+      <div class="photo-controls">
+        <button id="prevBtn" class="secondary">❮</button>
+        <span id="photoCount">1 / 4</span>
+        <button id="nextBtn" class="secondary">❯</button>
+      </div>
+
+      <p class="message">
+        Every picture holds a special memory.
+        I'm so happy to have you in my life. 💙
+      </p>
+
+      <button onclick="showPage('page3')">
+        Read My Letter 💌
+      </button>
+
+      <br><br>
+
+      <button class="secondary" onclick="showPage('page1')">
+        ← Back
+      </button>
+    </section>
+
+    <!-- PAGE 3: BIRTHDAY LETTER -->
+    <section id="page3" class="screen hidden">
+      <div class="sticker">💌💙🌸</div>
+      <p class="small-title">A LETTER FROM MY HEART</p>
+      <h1>For You,<br><span>My Siopao</span></h1>
+
+      <p class="message">
+        Happy Birthday to my best girl ever! ❤️🎂 Thank you for all the effort and everything you do for me. I'm so happy that I got to know you, and if there's anyone who's truly lucky, it's definitely me. I'm such a lucky idiot to have you in my life. 🥹❤️ I wish for you to study hard, graduate, become successful, and get rich someday. I hope you'll achieve all your dreams and get everything your heart desires. You deserve all the happiness and success in the world. I'm being truly honest and genuine with you. I'll do my very best and give everything I can to make things work for the both of us. I want us to grow together, support each other, and achieve our dreams side by side. Enjoy your special day, my baby girl! I hope your birthday is filled with happiness, love, and beautiful memories. Always remember that you are special to me, and I'm so grateful to have you in my life. Happy Birthday, my baby girl! I Miss you so much. ❤️🎉💖
+      </p>
+
+      <button onclick="showPage('page1')">
+        Back to the Beginning 🩵
+      </button>
+    </section>
+
+  </main>
+
+  <footer>Made with 💙 just for you</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
